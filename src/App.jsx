@@ -1,12 +1,17 @@
+import Navigation from "./components/Navigation/Navigation";
+import HomeMain from "./pages/HomeScreen/HomeMain";
 
 function App() {
 
 
   return (
-    <>
-      <h1 className="text-center"> welcome to kuku's website </h1>
-    </>
-  )
+		<>
+      <Navigation />
+      
+      {/* BELOW COMPONENT CONTAIN ALL THE HOME SCREEN COMPONENT  */}
+      <HomeMain />
+		</>
+	);
 }
 
 export default App
