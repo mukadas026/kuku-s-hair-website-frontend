@@ -40,9 +40,9 @@ const Hero = () => {
 							Direct to your inbox
 						</h1>
 
-						<div class="flex items-center border-b border-gray-700  py-2">
+						<div className="flex items-center border-b border-gray-700  py-2">
 							<input
-								class="appearance-none font-Poppins bg-transparent border-none w-full
+								className="appearance-none font-Poppins bg-transparent border-none w-full
                                text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
 								type="text"
 								placeholder="Enter your email"
