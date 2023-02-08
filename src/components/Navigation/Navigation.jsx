@@ -27,10 +27,9 @@ export default function Navigation() {
 									<img className="h-10 w-10 bg-Main" src={logo} alt="logo" />
 								</a>
 							</div>
-
 							{/* Flyout menus */}
 							<Popover.Group className=" absolute inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch">
-								<div className="flex h-14 outline-none space-x-8 overflow-x-auto border-t px-4 pb-px sm:h-full sm:justify-center sm:overflow-visible sm:border-t-0 sm:pb-0">
+								<div className="flex h-14  outline-none space-x-8 overflow-x-auto border-t px-4 pb-px sm:h-full sm:justify-center  sm:overflow-visible sm:border-t-0 sm:pb-0">
 									{navigation.categories.map((category, categoryIdx) => (
 										<Popover key={categoryIdx} className="flex">
 											{({ open }) => (
@@ -57,7 +56,7 @@ export default function Navigation() {
 							<div className="flex flex-1  items-center justify-end">
 								<button
 									type="button"
-									className="inline-flex sm:m-10  items-center rounded-md border border-transparent bg-Main px-6 py-3 text-base font-medium text-white shadow-sm  focus:outline-none  focus:ring-offset-2"
+									className="inline-flex sm:m-10 sm:h-10 items-center rounded-md border border-transparent bg-Main px-6 py-3 text-base font-medium text-white shadow-sm  focus:outline-none  focus:ring-offset-2"
 								>
 									Book Appointment
 								</button>
