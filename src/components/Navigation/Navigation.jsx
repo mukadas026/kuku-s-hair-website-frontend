@@ -53,12 +53,12 @@ export default function Navigation() {
 								</div>
 							</Popover.Group>
 							{/* SEARCH AND  CAR SECTION  */}
-							<div className="flex flex-1  items-center justify-end">
+							<div className="flex flex-row  items-center justify-end">
 								<button
 									type="button"
-									className="inline-flex sm:m-10 sm:h-10 items-center rounded-md border border-transparent bg-Main px-6 py-3 text-base font-medium text-white shadow-sm  focus:outline-none  focus:ring-offset-2"
+									className="sm:m-10  p-2 sm:h-10 items-center rounded-md border border-transparent bg-Main px-6 text-base font-medium text-white shadow-sm  focus:outline-none  focus:ring-offset-2"
 								>
-									Book Appointment
+									<span className="">Book Appointment</span>
 								</button>
 								{/* Search */}
 								<div className="b">
