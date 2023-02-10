@@ -21,7 +21,7 @@ export default function Navigation() {
 					<div className=" px-4 pb-14 sm:px-0 sm:pb-0">
 						<div className="flex h-16 items-center justify-between">
 							{/* Logo */}
-							<div className="flex flex-1  ">
+							<div className="flex   ">
 								<a href="/">
 									<span className="sr-only">Your Company</span>
 									<img className="h-10 w-10 bg-Main" src={logo} alt="logo" />
