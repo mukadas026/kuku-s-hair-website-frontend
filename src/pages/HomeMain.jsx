@@ -2,17 +2,23 @@
 import React from 'react'
 import Hero from '../components/Hero'
 import OurTopPicks from '../components/OurTopPicks/OurTopPicks'
+import About from '../components/AboutUS/About.jsx';
+
 
 export const HomeMain = () => {
   return (
-      <>
-          {/* HOME SCREEN HERO */}
-      <Hero />
+		<>
+			{/* HOME SCREEN HERO */}
+		
+			<Hero />
+
+			{/*  */}
+      <OurTopPicks />
       
-      {/*  */}
-      <OurTopPicks/>
-     </>
-  )
+      {/* About us component */}
+      <About/>
+		</>
+	);
 }
 
 
