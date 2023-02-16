@@ -35,7 +35,7 @@ const [openSearch, setOpenSearch] = useState(false);
 									</a>
 								</div>
 								{/* Flyout menus */}
-								<Popover.Group className=" absolute inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch">
+								{/* <Popover.Group className=" absolute inset-x-0 bottom-0 sm:static sm:flex-1 sm:self-stretch">
 									<div className="flex h-14  outline-none space-x-8 overflow-x-auto border-t px-4 pb-px sm:h-full sm:justify-center  sm:overflow-visible sm:border-t-0 sm:pb-0">
 										{navigation.categories.map((category, categoryIdx) => (
 											<Popover key={categoryIdx} className="flex">
@@ -58,14 +58,14 @@ const [openSearch, setOpenSearch] = useState(false);
 											</Popover>
 										))}
 									</div>
-								</Popover.Group>
+								</Popover.Group> */}
 								{/* SEARCH AND  CAR SECTION  */}
 								<div className="flex flex-row  space-x-5 items-center justify-end">
 									<button
 										type="button"
-										className="sm:m-10  p-2 sm:h-10 items-center rounded-md border border-transparent bg-Main px-6 text-base font-medium text-white shadow-sm  focus:outline-none  focus:ring-offset-2"
+										className="sm:w-[60%] md:w-[100%]  sm:h-12 md:h-10 items-center rounded-md border border-transparent bg-Main px-6 text-base font-medium text-white shadow-sm  focus:outline-none  focus:ring-offset-2"
 									>
-										<span className="">Book Appointment</span>
+										<span className="sm:text-sm sm:tracking-tight md:tracking-normal md:text-base ">Book Appointment</span>
 									</button>
 									{/* Search */}
 									<div className=" border-Main border rounded-full ">
