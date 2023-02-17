@@ -4,7 +4,7 @@ import React from 'react'
 const SearchBnt = () => {
   return (
 		<>
-			<div className="mx-10 lg:mx-40 mb-3">
+			<div className="mx-10 lg:mx-10 mb-20 lg:mb-8   bg-white">
 				<form className="flex items-center">
 					<div className="relative w-full">
 						{/* search icon  */}
@@ -27,7 +27,7 @@ const SearchBnt = () => {
 						<input
 							type="text"
 							id="simple-search"
-							className="bg-gray-50 border border-gray-400 text-gray-900 text-sm outline-none rounded-lg focus:ring-Main focus:border-gray-200 block w-full pl-10 p-2.5   "
+							className="bg-gray-50 border border-gray-400 text-gray-900 text-sm outline-none rounded-lg focus:ring-Main focus:border-gray-500 block w-full pl-10 p-2.5   "
 							placeholder="Search"
 							required
 						/>
