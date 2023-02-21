@@ -3,6 +3,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 
 import About from '../components/AboutUS/About.jsx';
+import OurTopPicks from '../components/OurTopPicks/OurTopPicks';
 
 
 export const HomeMain = () => {
@@ -11,7 +12,8 @@ export const HomeMain = () => {
 			{/* HOME SCREEN HERO */}
 		   < Hero/>
 		
-			{/*  */}
+		  {/*  */}
+		  <OurTopPicks/>
     
       
       {/* About us component */}
