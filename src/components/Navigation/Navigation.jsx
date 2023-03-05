@@ -39,22 +39,7 @@ export default function Navigation() {
 
 
 
-	//  useRe function to close the search input filed when the user click  outside 
-	let SearchRef = useRef( null )
-	useEffect(() => {
-		let handler = (e) => {
-			if (menuRef.current && !menuRef.current.contains(e.target)) {
-				setOpenSearch(false);
-				console.log(SearchRef.current);
-			}
-		};
-
-		document.addEventListener("mousedown", handler);
-
-		return () => {
-			document.removeEventListener("mousedown", handler);
-		};
-	}, []);
+	
 
 
 	return (
@@ -151,14 +136,12 @@ export default function Navigation() {
 											/>
 										</button>
 									</div>
-								</div>	{/* -------------------  SEARCH AND  CAR SECTION -------------------  */}
-
-							
+								</div>{" "}
+								{/* -------------------  SEARCH AND  CAR SECTION -------------------  */}
 								{/* 
 
 								
 								{/*  ===============Toggle Mobile Navigation ============= ---------------- */}
-
 								<div className="lg:hidden flex">
 									<button
 										type="button"
@@ -187,17 +170,16 @@ export default function Navigation() {
 							</div>
 							{/* END Right Section */}
 						</div>
-
 						{/* ===========================  Search input fled. This will appear in the screen when  the user click on the search icon in the navbar 
 						 ============ */}
-						<div ref={SearchRef}>
-							{openSearch ? <SearchBnt /> : null}
-						</div> {/* ------------ END OF SEARCH INPUT  FILED ----------------------- */}
-
+						
+							<div className="mt-10 mb-10">
+								{openSearch ? <SearchBnt /> : null}
+							</div>{" "}
 						
 
+						{/* ------------ END OF SEARCH INPUT  FILED ----------------------- */}
 						{/* ================== Mobile view Navigation This section will show on only mobile devices  ================= */}
-
 						<div
 							ref={menuRef}
 							className={`   bg-white    shadow-2xl    fixed top-0 z-50  w-3/4 h-screen  lg:hidden flex flex-col gap-10  text-medium  p-7 pt-10 left-0  duration-500 xl:hidden ${

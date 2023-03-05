@@ -5,7 +5,7 @@ const Hero = () => {
 		<>
 			<div className="bg-Dark">
 				{/* VIDEO SECTION . THIS WILL CONTAIN THE VIDEO */}
-				<div className="mx-auto max-w-7xl   mt-40 py-20 px-6 sm:py-24 lg:px-8">
+				<div className="mx-auto max-w-7xl   mt-10 py-20 px-6 sm:py-24 lg:px-8">
 					<div className="text-center">
 						<p className="mx-auto text-center mt-5 font-Poppins  max-w-xl text-xl text-white">
 							Video will be inserted here
