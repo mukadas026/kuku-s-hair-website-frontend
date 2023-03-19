@@ -22,7 +22,7 @@ module.exports = {
         about: '#F9E8EC',
         discount: '#FE9DE2',
         line: '#98A2B3',
-        projects: "#161616",
+        loginbg: "#F5F7F9",
         darknight: "#252A2F"
       },
       fontFamily: {
