@@ -1,22 +1,34 @@
-
-
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
-	content: ["./src/**/*.{js,jsx,ts,tsx}"],
-	theme: {
-		extend: {
-			colors: {
-				Darker: "#FA58A1",
-				Main: "#FC6DC1",
-				Lighter: "#FE9DE2",
-				Dark: "#010024",
-				Light: "#4D4C70",
-				about_bg: "#F9E8EC",
-			},
-			fontFamily: {
-				Poppins: "Poppins",
-			},
-		},
-	},
-	plugins: [],
-};
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    screens: {
+      sm: "340px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
+    extend: {
+      colors: {
+        primary: '#FC6DC1',
+        secondary: '#010024',
+        tertiary: '#FE9DE2',
+        grayStroke: '#E3E2E9',
+        about: '#F9E8EC',
+        discount: '#FE9DE2',
+        line: '#98A2B3',
+        projects: "#161616",
+        darknight: "#252A2F"
+      },
+      fontFamily: {
+        dodoo: ['Sacramento']
+      }
+    },
+  },
+  plugins: [],
+}
