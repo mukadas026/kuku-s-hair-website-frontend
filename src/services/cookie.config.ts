@@ -1,6 +1,8 @@
 import Cookies from "js-cookie";
+import dotenv from "dotenv";
+dotenv.config();
 
-export const BASE_URL = process.env.REACT_APP_SERVER_URL + "/graphql";
+export const BASE_URL = process.env.REACT_APP_SERVER_URL || "";
 
 class Auth {
   getCipher(): string | null {

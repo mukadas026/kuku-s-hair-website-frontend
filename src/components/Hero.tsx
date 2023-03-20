@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -24,13 +25,17 @@ const Hero = () => {
             {/* LOGIN AND SING UP BUTTONS  */}
             <div className="flex flex-row space-x-6 ">
               {/* LOGIN BUTTON */}
-              <button className="mt-5 bg-white text-gray-700 font-Poppins py-2 px-4 rounded-full  ">
-                <span className="p-5">Login</span>
-              </button>
+              <Link to="/signin">
+                <button className="mt-5 bg-white text-gray-700 font-Poppins py-2 px-4 rounded-full  ">
+                  <span className="p-5">Login</span>
+                </button>
+              </Link>
               {/* SING UP BUTTON  */}
-              <button className="mt-5 bg-Darker  text-white font-Poppins py-2 px-4 rounded-full bg-transparent font-semibold hover:text-white  border border-white">
-                <span className="p-6">Sign Up</span>
-              </button>
+              <Link to="/signup">
+                <button className="mt-5 bg-Darker  text-white font-Poppins py-2 px-4 rounded-full bg-transparent font-semibold hover:text-white  border border-white">
+                  <span className="p-6">Sign Up</span>
+                </button>
+              </Link>
             </div>
           </div>
           {/* OFFERS SECTIONS  */}

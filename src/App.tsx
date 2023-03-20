@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./pages/Home";
 import { Toaster } from "react-hot-toast";
+import { RouterConfig } from "./navigation/router-config";
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
           },
         }}
       />
-      <Home />
+      <RouterConfig />
     </>
   );
 }

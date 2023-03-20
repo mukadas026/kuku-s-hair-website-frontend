@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar show={true} />
       <Hero />
       <div className="bg-grayStroke pt-10">
         <TopPicks />

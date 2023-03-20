@@ -23,7 +23,8 @@ module.exports = {
         discount: '#FE9DE2',
         line: '#98A2B3',
         loginbg: "#F5F7F9",
-        darknight: "#252A2F"
+        logintext: "#4D4C70",
+        loginptext : "#808099"
       },
       fontFamily: {
         dodoo: ['Sacramento']
