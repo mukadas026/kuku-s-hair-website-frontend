@@ -17,7 +17,7 @@ function Login() {
       "
       >
         <div className="flex justify-center items-center pt-12">
-          <div className="flex flex-col justify-center items-center bg-white w-[40%] pb-24">
+          <div className="flex flex-col justify-center items-center bg-white shadow-sm shadow-black w-[40%] pb-24">
             <div className="pt-10">
               <h1 className="text-4xl text-logintext font-bold text-center">
                 Welcome !

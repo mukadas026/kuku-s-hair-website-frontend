@@ -13,7 +13,7 @@ function Navbar({ show }: NavProp) {
 
   return (
     <>
-      <nav className={show === true ? "flex justify-around mb-1 items-center py-2" : "flex items-center py-4 px-28  border-2 h-[70px]"}>
+      <nav className={show === true ? "flex justify-around mb-1 items-center py-2" : "flex items-center py-4 px-28 border-2 h-[70px]"}>
         <div>
           <img src={logo} className="h-12 w-18 " alt="logo" />
         </div>
