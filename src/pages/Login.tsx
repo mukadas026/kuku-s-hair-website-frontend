@@ -17,7 +17,7 @@ function Login() {
       "
       >
         <div className="flex justify-center items-center pt-12">
-          <div className="flex flex-col justify-center items-center bg-white shadow-sm shadow-black w-[40%] pb-24">
+          <div className="flex flex-col justify-center items-center bg-white shadow-sm shadow-black sm:w-[90%] md:w-[40%] pb-24">
             <div className="pt-10">
               <h1 className="text-4xl text-logintext font-bold text-center">
                 Welcome !
@@ -30,14 +30,14 @@ function Login() {
               <input
                 type="email"
                 placeholder="Email address"
-                className="border-[1px] px-4 h-10 w-96"
+                className="border-[1px] px-4 h-10 sm:w-80 md:w-96"
               />
               <input
                 type="password"
                 placeholder="Password"
-                className="border-[1px] px-4 h-10 w-96"
+                className="border-[1px] px-4 h-10 sm:w-80 md:w-96"
               />
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between md:w-96 sm:w-80">
                 <div className="flex gap-x-1">
                   <input type="checkbox" name="remember-me" />
                   <label htmlFor="remember-me" className="text-xs text-primary">
@@ -49,12 +49,12 @@ function Login() {
                 </div>
               </div>
               <div>
-                <button className="rounded-lg text-white font-bold bg-primary p-2 w-96">
+                <button className="rounded-lg text-white font-bold bg-primary p-2 sm:w-80 md:w-96">
                   Sign in
                 </button>
               </div>
               <div>
-                <button className="flex items-center justify-center gap-x-2 rounded-lg text-primary bg-white border-[1px] font-bold border-primary p-2 w-96">
+                <button className="flex items-center justify-center gap-x-2 rounded-lg text-primary bg-white border-[1px] font-bold border-primary p-2 sm:w-80 md:w-96">
                   <FcGoogle />
                   Sign in with Google
                 </button>

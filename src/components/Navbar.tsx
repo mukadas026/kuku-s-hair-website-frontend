@@ -2,6 +2,7 @@ import React from "react";
 import { CiSearch, CiUser } from "react-icons/ci";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MdExpandMore } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const logo = require("../assets/logo.png");
 
@@ -10,10 +11,15 @@ interface NavProp {
 }
 
 function Navbar({ show }: NavProp) {
-
   return (
     <>
-      <nav className={show === true ? "flex justify-around mb-1 items-center py-2" : "flex items-center py-4 px-28 border-2 h-[70px]"}>
+      <nav
+        className={
+          show === true
+            ? "flex justify-around mb-1 items-center py-2"
+            : "flex items-center py-4 sm:px-6 md:px-28 border-2 h-[70px]"
+        }
+      >
         <div>
           <img src={logo} className="h-12 w-18 " alt="logo" />
         </div>
@@ -21,9 +27,17 @@ function Navbar({ show }: NavProp) {
           <>
             <div>
               <ul className="flex gap-x-12">
-                <li className="">DISCOVER</li>
-                <li className="">SHOP</li>
-                <li className="">CONTACT</li>
+                <Link to="/">
+                  {" "}
+                  <li className="hover:text-primary">DISCOVER</li>
+                </Link>
+                <Link to="/shop">
+                  <li className="hover:text-primary">SHOP</li>
+                </Link>
+                <Link to="/contact">
+                  {" "}
+                  <li className="hover:text-primary">CONTACT</li>
+                </Link>
               </ul>
             </div>
             <div>
