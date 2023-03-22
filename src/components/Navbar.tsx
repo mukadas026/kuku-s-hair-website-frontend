@@ -1,4 +1,4 @@
-import React, {  } from "react";
+import React, { useState } from "react";
 import { CiSearch, CiUser } from "react-icons/ci";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MdExpandMore } from "react-icons/md";
@@ -14,9 +14,7 @@ interface NavProp {
 // search icon
 
 function Navbar({ show }: NavProp) {
-  function setModalOpen(arg0: boolean) {
-    throw new Error("Function not implemented.");
-  }
+  const [showModal, setShowmodal] = useState(true);
 
   return (
     <>
@@ -53,7 +51,7 @@ function Navbar({ show }: NavProp) {
               </button>
             </div>
             <div className="flex gap-x-6">
-              <button onClick={() => setModalOpen(true)}>
+              <button onClick={() => setShowmodal(true)}>
                 <div className="border-[0.5px] w-8 h-8 p-1 border-primary  rounded-full">
                   <CiSearch size={23} color="#FC6DC1" />
                 </div>
@@ -72,8 +70,8 @@ function Navbar({ show }: NavProp) {
 
       {/*  MODAL  COMPONENT  */}
       <SearchModal
-        modalOpen={setModalOpen}
-        ModalCose={() => setModalOpen(false)}
+        modalOpen={showModal}
+        ModalCose={() => setShowmodal(false)}
       />
     </>
   );
