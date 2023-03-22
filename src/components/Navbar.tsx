@@ -14,7 +14,7 @@ interface NavProp {
 // search icon
 
 function Navbar({ show }: NavProp) {
-  const [showModal, setShowmodal] = useState(true);
+  const [showModal, setShowmodal] = useState(false);
 
   return (
     <>
