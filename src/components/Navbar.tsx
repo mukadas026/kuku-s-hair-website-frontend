@@ -56,9 +56,9 @@ function Navbar({ show }: NavProp) {
                   <CiSearch size={23} color="#FC6DC1" />
                 </div>
               </button>
-              <div className="pt-1">
-                <AiOutlineShoppingCart size={23} color="#FC6DC1" />
-              </div>
+              <Link to='/cart' className="pt-1">
+                <AiOutlineShoppingCart size={23} color="#FC6DC1" className="cursor-pointer" />
+              </Link>
               <div className="flex border-[0.5px] border-primary w-12 h-7 p-1">
                 <CiUser size={23} color="#FC6DC1" />
                 <MdExpandMore size={23} color="#FC6DC1" />

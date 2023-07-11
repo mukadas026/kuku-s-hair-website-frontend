@@ -4,6 +4,8 @@ import { CenterLoader } from "../utils/loaders";
 import Home from "../pages/Home";
 import Shop from "../pages/Shop";
 import Contact from "../pages/Contact";
+import Cart from "../pages/Cart";
+import Product from "../pages/Product";
 const SignUp = React.lazy(() => import("../pages/SignUp"));
 const SignIn = React.lazy(() => import("../pages/Login"));
 
@@ -18,6 +20,10 @@ function RouterConfig() {
             <Route path="signin" element={<SignIn />} />
             <Route path="shop" element={<Shop />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="product" element={<Product />} />
+
+
           </Routes>
         </React.Suspense>
       </BrowserRouter>
