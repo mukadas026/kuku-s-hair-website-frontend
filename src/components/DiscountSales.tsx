@@ -1,6 +1,7 @@
 import React from "react"
 import Card3 from "./Card3"
 import { useLocation } from "react-router-dom"
+import Slider from "../utils/Slider"
 
 const wig6 = require("../assets/wig6.jpg")
 
@@ -9,7 +10,11 @@ function DiscountSales() {
 	const pathName = routes.pathname
 	return (
 		<>
-			<div className={`flex flex-col justify-center items-center ${pathName === '/' && 'bg-discount'} bg-opacity-20 pt-14 pb-16`}>
+			<div
+				className={`flex flex-col justify-center items-center ${
+					pathName === "/" && "bg-discount"
+				} bg-opacity-20 pt-14 pb-16`}
+			>
 				{pathName === "/" ? (
 					<>
 						<h1 className='text-5xl font-medium font-serif pb-5'>Discount Sales</h1>
@@ -23,11 +28,16 @@ function DiscountSales() {
 						</div>
 					</>
 				)}
-				<div className='flex gap-x-16'>
+				{/* <div className='flex gap-x-16'>
 					<Card3 image={wig6} />
 					<Card3 image={wig6} />
 					<Card3 image={wig6} />
-				</div>
+				</div> */}
+				<Slider>
+					<Card3 image={wig6} />
+					<Card3 image={wig6} />
+					<Card3 image={wig6} />
+				</Slider>
 			</div>
 		</>
 	)
