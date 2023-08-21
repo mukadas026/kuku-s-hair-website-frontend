@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2015",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+
+    "useDefineForClassFields": true,
+    // "allowImportingTsExtensions": true,
+    
+    /* Linting */
+    
+
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
