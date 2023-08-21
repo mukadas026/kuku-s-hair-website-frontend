@@ -8,7 +8,7 @@ function Card({ image }: any) {
           <img src={image} className="w-64 h-60" alt="wig1" />
         </div>
         <div className="flex flex-col justify-center gap-y-4">
-          <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className="text-center font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <div className="flex justify-center gap-x-2">
             <p className="text-center line-through">₵2,300</p>
             <p className="text-center text-tertiary">₵2,300</p>

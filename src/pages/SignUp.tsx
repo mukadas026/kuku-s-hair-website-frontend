@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
+
 function SignUp() {
+  useEffect(() => {
+    document.title = "Sign Up"
+  })
+
   return (
     <>
       <Navbar show={false} />
