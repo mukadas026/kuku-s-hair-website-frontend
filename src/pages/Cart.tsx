@@ -11,26 +11,29 @@ import { useNavigate } from "react-router-dom"
 
 import wig9 from "../assets/wig9.png"
 import MayAlsoLike from "../components/MayAlsoLike"
+import { CartType } from "../types/types"
+
+
 
 const Cart: FC = () => {
-	type CartType = {
-		name: string
-		details: string
-		image: string
-		price: number
-		quantity: number
-		id: string
-	}[]
 
 	const cartItems: CartType = [
-		{
-			name: "Wig1",
-			details: "This is the first item in the cart",
-			image: wig9,
-			price: 500,
-			quantity: 50,
-			id: "510",
-		},
+		// {
+		// 	name: "Wig1",
+		// 	details: "This is the first item in the cart",
+		// 	image: wig9,
+		// 	price: 500,
+		// 	quantity: 50,
+		// 	id: "510",
+		// },
+		// {
+		// 	name: "Wig1",
+		// 	details: "This is the first item in the cart",
+		// 	image: wig9,
+		// 	price: 500,
+		// 	quantity: 50,
+		// 	id: "510",
+		// },
 		// {
 		// 	name: "Wig1",
 		// 	details: "This is the first item in the cart",
@@ -135,7 +138,7 @@ const Cart: FC = () => {
 							<Button
 								text='Checkout'
 								width='full'
-								handler={() => {}}
+								handler={() => navigate('/checkout')}
 							/>
 							{/* </div> */}
 						</div>

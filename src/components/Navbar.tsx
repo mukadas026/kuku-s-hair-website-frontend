@@ -46,8 +46,8 @@ function Navbar({ show }: NavProp) {
 	}, [])
 
 	return (
-		<div className='sticky top-0 w-full bg-white'>
-			<nav className='relative z-20 flex justify-between md:mx-4 md:mb-1 items-center py-2 h-[10vh] px-4'>
+		<div className='sticky z-[9999] top-0 w-full bg-white'>
+			<nav className={`relative z-20 ${openMenu && "border-transparent"} border-b-2 flex justify-between md:mx-4 md:mb-1 items-center py-2 h-[10vh] px-4`}>
 				<div>
 					<img
 						src={logo}
